@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="REPARATION TELEPHONIQUE ET MAINTENANCE GSM">
+    <meta name="keywords" content="REPARATION, téléphone, portable, maintenance, gsm, Déblocage, écran, réseaux, Diagnostic, réparation, nettoyage, transfert de données, configuration, mise à jour, appareil">
+    <meta name="author" content="Maxime">
+    <meta http-equiv="refresh" content="21600">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Wed, 06 oct 2028 07:28:00 GMT">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+    <title>Mobifix GSM - Réparation téléphone Bénin</title>
+</head>
+<body>
+    <header class="bar">
+        <div class="logo"><img src="image/mobifix.jpg" height="75px" width="75px" alt="logo entreprise de réparation"></div>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <nav id="me" class="menu">
+            <a href="#home"><i class="fas fa-home"></i>Accueil</a>
+            <a href="#tarifs"><i class="fas fa-euro-sign"></i> Tarifs écrans</a>
+            <a href="#service"><i class="fas fa-tools"></i>Services</a>
+            <a href="#accessoire"><i class="fas fa-headphones"></i>Accessoires</a>
+            <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+            <a href="#lo"><i class="fas fa-map-pin"></i>Localisation</a>
+            <a href="#avis"><i class="fas fa-star"></i>Avis</a>
+            <a href="#about"><i class="fas fa-info-circle"></i>À propos</a>
+            <button class="icon-Btn" id="themeBtn"><i class="fas fa-moon"></i> </button>
+        </nav>
+    </header>
+        <!-- ========== ACCUEIL : IMAGE + TEXTE (style site vente) ========== -->
+    <section id="home" class="section">
+    <div class="home-grid">
+        <div class="home-text">
+        <h1>📱 MOBIFIX GSM</h1>
+        <h2 id="h2">Réparation téléphonique & maintenance GSM — Bénin</h2>
+        <p style="color: #e67e22;">🔧 Déblocage · Écran · Batterie · Logiciels · Données</p>
+        <div class="hero-badge">⭐ ON S'EN OCCUPE ⭐</div>
+        <p style="margin-top: 1.5rem; font-weight: 300; color: #e67e22;">Diagnostic, réparation, nettoyage, transfert, mise à jour…</p>
+        <p style="font-weight: 400; color: #e67e22; font-size: 1.1rem;">📞 Appelez-nous dès maintenant !</p>
+        </div>
+        <div class="home-image">
+        <img src="image/mobifix.jpg" alt="Mobifix GSM réparation téléphone">
+        </div>
+    </div>
+    </section>
+    <!-- ========== NOUVEAU : TARIFS ÉCRANS ========== -->
+<section id="tarifs" class="section">
+    <h1 style="border-bottom: 3px solid #e67e22; display: inline-block; padding-bottom: 0.3rem;">📄 Tarifs des écrans</h1>
+    <p class="mt-2">Retrouvez ci-dessous les prix pour le changement d'écran selon le modèle de votre appareil.</p>
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: #3d5166; text-align: center;">
+        <i class="fas fa-info-circle" style="color: #e67e22;"></i> Prix indicatifs hors main-d'œuvre. Consultez-nous pour une devis personnalisé.
+    </p>
+    </div>
+    <div class="tarifs-pdf">
+        <p>Retrouvez tous nos tarifs en un clic.</p>
+        <div style="text-align: center;">
+            <a href="PRIX_IPHONE.pdf" aria-label="PRIX IPHONE" target="_blank"><button class="btn-show">IPHONE</button></a>
+            <a href="PRIX_SAMSUNG.pdf" aria-label="PRIX SAMSUNG" target="_blank"><button class="btn-show">SAMSUNG</button></a>
+            <a href="PRIX_INFINIX.pdf" aria-label="PRIX INFINIX" target="_blank"><button class="btn-show">INFINIX</button></a>
+            <a href="PRIX_TECNO.pdf" aria-label="PRIX TECNO" target="_blank"><button class="btn-show">TECNO</button></a>
+            <a href="PRIX_ITEL.pdf" aria-label="PRIX ITEL" target="_blank"><button class="btn-show">ITEL</button></a>
+            <a href="PRIX_OPPO.pdf" aria-label="PRIX OPPO" target="_blank"><button class="btn-show">OPPO</button></a>
+            <a href="PRIX_HUAWEI.pdf" aria-label="PRIX HUAWEI" target="_blank"><button class="btn-show">HUAWEI</button></a>
+            <a href="PRIX_REDMI.pdf" aria-label="PRIX REDMI" target="_blank"><button class="btn-show">REDMI</button></a>
+        </div>
+    </div>
+  
+</section>
+    <!-- ========== SERVICES ========== -->
+    <section id="service" class="section">
+    <h1 style="border-bottom: 3px solid #e67e22; display: inline-block; padding-bottom: 0.3rem;">🔧 Nos services</h1>
+    <p class="mt-2">Un soucis avec votre téléphone ? Nos experts sont là pour vous !</p>
+    <div class="flex-center" style="margin: 1rem 0;">
+        <button class="btn-show" id="btservices"><i class="fas fa-arrow-down"></i> Voir tous nos services</button>
+    </div>
+
+    <div id="services" style="display: none;">
+        <div class="grid-wrapper">
+        <div class="service-card"><h3>📱 Changement écran</h3><p>Tecno, iPhone, Infinix…</p><img src="image/iphoecra.jpg" alt="écran"><button class="btn btn-primary" onclick="showDeviceModal('ECRAN')">Demander</button></div>
+        <div class="service-card"><h3>🔲 Arrière & coque</h3><p>iPhone, Samsung, Tecno</p><img src="image/derriereip.jpeg" alt="arrière"><button class="btn btn-primary" onclick="showDeviceModal('ARRIERE')">Demander</button></div>
+        <div class="service-card"><h3>🔋 Batterie</h3><p>iPhone, Android</p><img src="image/iphobatt.jpg" alt="batterie"><button class="btn btn-primary" onclick="showDeviceModal('BATTERIE')">Demander</button></div>
+        <div class="service-card"><h3>🛠️ Réparation générale</h3><p>Tous problèmes</p><img src="image/Affiche1.jpg" alt="réparation"><button class="btn btn-primary" onclick="showDeviceModal('REPARATION')">Demander</button></div>
+        <div class="service-card"><h3>📶 Déblocage réseau</h3><p>Tous opérateurs</p><img src="image/Affiche5.jpg" alt="déblocage réseau"><button class="btn btn-primary" onclick="showDeviceModal('DEBLOCAGE RESEAUX')">Demander</button></div>
+        <div class="service-card"><h3>💻 Logiciels & mise à jour</h3><p>Windows, Mac, Android</p><img src="image/Affiche4.jpg" alt="logiciel"><button class="btn btn-primary" onclick="showDeviceModal('MISE A JOUR LOGICIELS')">Demander</button></div>
+        <div class="service-card"><h3>💾 Récupération données</h3><p>Android / iPhone</p><img src="image/Affiche3.jpg" alt="données"><button class="btn btn-primary" onclick="showDeviceModal('TRANSFERT DONNEES')">Demander</button></div>
+        <div class="service-card"><h3>🔬 Diagnostic matériel</h3><p>PC, téléphone</p><img src="image/Affiche2.jpg" alt="diagnostic"><button class="btn btn-primary" onclick="showDeviceModal('DIAGNOSTIC MATERIEL')">Demander</button></div>
+        <div class="service-card"><h3>🧼 Maintenance</h3><p>Nettoyage, optimisation</p><img src="image/Affiche6.jpg" alt="maintenance"><button class="btn btn-primary" onclick="showDeviceModal('MAINTENANCE')">Demander</button></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ========== ACCESSOIRES ========== -->
+    <section id="accessoire" class="section">
+    <h1 style="border-bottom: 3px solid #e67e22; display: inline-block; padding-bottom: 0.3rem;">🎧 Accessoires</h1>
+    <p class="mt-2">Tout pour accessoiriser vos téléphones et ordinateurs.</p>
+    <div class="flex-center" style="margin: 1rem 0;">
+        <button class="btn-show" id="btaccessoires"><i class="fas fa-arrow-down"></i> Découvrir nos accessoires</button>
+    </div>
+
+    <div id="accessoires" style="display: none;">
+        <div class="grid-wrapper">
+        <div class="service-card"><h3>💾 Clés USB</h3><p>2Go, 4Go, 16Go…</p><img src="image/cle.jpg" alt="clé usb"><button class="btn btn-primary" onclick="showDeviceModal('CLE USB')">Demander</button></div>
+        <div class="service-card"><h3>🔌 Chargeur type C → C</h3><p>Rapide et fiable</p><img src="image/chargeur1n.jpg" alt="chargeur"><button class="btn btn-primary" onclick="showDeviceModal('CHARGEUR type C - C')">Demander</button></div>
+        <div class="service-card"><h3>🔌 Chargeur type C → iPhone</h3><img src="image/charg1.jpg" alt="chargeur iphone"><button class="btn btn-primary" onclick="showDeviceModal('chargeur type C iPhone')">Demander</button></div>
+        <div class="service-card"><h3>📱 Pochettes</h3><p>Tous modèles</p><img src="image/pochettep.jpg" alt="pochette"><button class="btn btn-primary" onclick="showDeviceModal('POCHETTE')">Demander</button></div>
+        <div class="service-card"><h3>🎧 Écouteurs sans fil</h3><img src="image/pod.jpg" alt="écouteurs"><button class="btn btn-primary" onclick="showDeviceModal('ECOUTEURS SANS FIL')">Demander</button></div>
+        <div class="service-card"><h3>🔌 Chargeur multi-câbles</h3><img src="image/chargeur6.jpg" alt="multi"><button class="btn btn-primary" onclick="showDeviceModal('CHARGEUR MULTICABLES')">Demander</button></div>
+        <div class="service-card"><h3>🔌 Double câble</h3><p>Android / iPhone</p><img src="image/chargeur12.jpg" alt="double câble"><button class="btn btn-primary" onclick="showDeviceModal('CHARGEUR DOUBLE CABLES')">Demander</button></div>
+        <div class="service-card"><h3>⚡ Chargeur ultra rapide</h3><img src="image/chargeur1nn.jpg" alt="ultra rapide"><button class="btn btn-primary" onclick="showDeviceModal('CHARGEUR ULTRA RAPIDE')">Demander</button></div>
+        <div class="service-card"><h3>🔋 Power bank avec câble</h3><img src="image/power.jpg" alt="power bank"><button class="btn btn-primary" onclick="showDeviceModal('power bank avec cable')">Demander</button></div>
+        <div class="service-card"><h3>🔋 Power bank sans câble</h3><img src="image/power11.jpg" alt="power bank"><button class="btn btn-primary" onclick="showDeviceModal('power bank sans cable')">Demander</button></div>
+        <div class="service-card"><h3>🧵 Câbles simples</h3><img src="image/cable.jpg" alt="câble"><button class="btn btn-primary" onclick="showDeviceModal('CABLES SIMPLES')">Demander</button></div>
+        <div class="service-card"><h3>🖱️ Souris sans fil</h3><img src="image/souris.jpg" alt="souris"><button class="btn btn-primary" onclick="showDeviceModal('SOURIS SANS FIL')">Demander</button></div>
+        </div>
+    </div>
+    </section>
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+    <h2><i class="fas fa-comment-dots" style="color: #e67e22;"></i> En quoi pouvons-nous vous aider ?</h2>
+    <fieldset>
+        <legend>✍️ Écrivez votre problème</legend>
+        <textarea id="message-send" rows="4" placeholder="Décrivez votre besoin..."></textarea>
+        <button class="btn btn-primary" id="send" style="width:100%; margin-top: 0.8rem;"><i class="fas fa-paper-plane"></i> Envoyer</button>
+    </fieldset>
+    <div style="margin-top: 2rem;">
+        <fieldset>
+        <legend>📞 Contact direct</legend>
+        <div class="contact-buttons">
+            <a href="tel:+2290196707286"><i class="fas fa-phone-alt"></i> Appeler</a>
+            <a href="http://wa.me/22996707286" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="mailto:urbinossdjossou@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+        </fieldset>
+    </div>
+    </section>
+
+    <!-- ========== LOCALISATION ========== -->
+    <section id="lo" class="section">
+    <h1 style="border-bottom: 3px solid #e67e22; display: inline-block;">📍 Localisation</h1>
+    <p>Ste Rita, rue du bar « La Station » continue — Cotonou, Bénin</p>
+    <div class="flex-center" style="margin: 1.5rem 0;">
+        <button class="btn btn-primary" id="localiser"><i class="fas fa-map"></i> Voir la carte</button>
+    </div>
+    <div id="localisation" style="display: none; text-align: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.086162520643!2d2.407434200000005!3d6.382879900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102355965d94baa5%3A0x178d1a7f2ed9cef0!2sLa%20station%20continue!5e0!3m2!1sfr!2sbj!4v1776940481989" width="100%" height="350" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    </section>
+        <!-- ========== AVIS ========== -->
+    <section id="avis" class="section">
+    <h1><i class="fas fa-star" style="color: #f1c40f;"></i> Avis clients</h1>
+    <p>Ce qu'ils pensent de nos services</p>
+    <div class="avis-grid" id="avisList">
+        <!-- chargé dynamiquement -->
+    </div>
+
+    <div class="bg-soft" style="margin-top: 2rem;">
+        <h3 style="color:#e67e22;">💬 Donnez votre avis</h3>
+        <input type="text" id="avisNom" placeholder="Votre nom" style="margin-bottom: 0.8rem;">
+        <div class="etoiles-select" id="etoilesSelect">
+        <span data-note="1">☆</span><span data-note="2">☆</span><span data-note="3">☆</span><span data-note="4">☆</span><span data-note="5">☆</span>
+        </div>
+        <input type="hidden" id="avisNote" value="5">
+        <textarea id="avisMessage" rows="3" placeholder="Votre avis..." style="margin: 0.8rem 0;"></textarea>
+        <button class="btn btn-primary" id="submitAvisBtn"><i class="fas fa-pen"></i> Envoyer mon avis</button>
+    </div>
+    </section>
+        <!-- ========== FOOTER ========== -->
+    <footer id="about">
+    <div>
+        <h3>📱 Mobifix GSM</h3>
+        <p>Réparation téléphonique et maintenance GSM au Bénin.</p>
+        <p style="font-style: italic;">"La qualité se voit dans chaque geste."</p>
+        <div style="margin-top: 0.8rem;"><a href="https://wa.me/22996707286" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></div>
+    </div>
+    <div>
+        <h3>🕐 Horaires</h3>
+        <ul class="horaires">
+        <li><span>Lundi - Vendredi</span> <span>08:00 - 20:00</span></li>
+        <li><span>Samedi</span> <span>09:00 - 17:00</span></li>
+        <li><span>Dimanche</span> <span>Fermé (sur RDV)</span></li>
+        </ul>
+    </div>
+    <div>
+        <h3>📍 Adresse</h3>
+        <p>🏠 Ste Rita, Cotonou, Bénin</p>
+        <p>📞 <a href="tel:+22996707286">+229 96 70 72 86</a></p>
+        <p>✉️ <a href="mailto:urbinossdjossou@gmail.com">contact@mobifix.com</a></p>
+    </div>
+    <div>
+        <h3>🔗 Liens rapides</h3>
+        <p><a href="#home">Accueil</a></p>
+        <p><a href="#service">Services</a></p>
+        <p><a href="#accessoire">Accessoires</a></p>
+        <p><a href="#avis">Avis</a></p>
+        <p><a href="#contact">Contact</a></p>
+        <p style="display: none;">Créé par Maxime</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2026 Mobifix GSM · Tous droits réservés</p>
+        <p>📍 Bénin · Réparation téléphonique professionnelle</p>
+    </div>
+    </footer>
+
+    <!-- ========== MODAL ========== -->
+    <div id="deviceModal" style="display: none; position: fixed; top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;justify-content:center;align-items:center;">
+    <div class="modal-content" style="background:#0d47a1;padding:30px;border-radius:40px;max-width:420px;width:90%;border:1px solid #2a6ab5;">
+        <h3 style="color:#f39c12;text-align:center;"><i class="fas fa-concierge-bell"></i> Votre demande</h3>
+        <p id="modalServiceName" style="color:#d5dfed;text-align:center;margin:15px 0;">Service : Chargement...</p>
+        <input type="text" id="modalDeviceInput" placeholder="Modèle de l'appareil (optionnel)" style="width:100%;padding:12px 18px;border-radius:40px;border:none;background:#1a5bb5;color:white;font-size:1rem;">
+        <div style="display:flex;gap:12px;margin-top:20px;">
+        <button id="modalConfirmBtn" class="btn btn-primary" style="flex:1;"><i class="fas fa-check"></i> Envoyer</button>
+        <button id="modalCancelBtn" class="btn" style="flex:1;background:#1a4a7a;"><i class="fas fa-times"></i> Annuler</button>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // Gestion du modal
+        let currentServiceName = '';
+
+        function showDeviceModal(serviceName) {
+            currentServiceName = serviceName;
+            document.getElementById('modalServiceName').innerHTML = `🔧 Service : <strong>${serviceName}</strong>`;
+            document.getElementById('deviceModal').style.display = 'flex';
+            document.getElementById('modalDeviceInput').value = '';
+            document.getElementById('modalDeviceInput').focus();
+        }
+
+        function sendWithDevice() {
+            const deviceModel = document.getElementById('modalDeviceInput').value.trim();
+            const phoneNumber = '22996707286';
+
+            const now = new Date();
+            const dateTime = now.toLocaleString('fr-FR', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            const deviceInfo = deviceModel !== '' ? deviceModel : 'Non précisé (client sera contacté)';
+
+            const formattedMessage = `📱 *NOUVELLE DEMANDE DE SERVICE - MOBIFIX* 📱\n\n📅 Date : ${dateTime}\n🔧 Service : *${currentServiceName}*\n📱 Appareil : ${deviceInfo}\n\n📝 Statut : Client en attente de contact\n\n---\n✅ À rappeler rapidement`;
+
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(formattedMessage)}`;
+            window.open(whatsappUrl, '_blank');
+
+            document.getElementById('deviceModal').style.display = 'none';
+        }
+
+        // Boutons du modal
+        document.getElementById('modalConfirmBtn').addEventListener('click', sendWithDevice);
+        document.getElementById('modalCancelBtn').addEventListener('click', () => {
+            document.getElementById('deviceModal').style.display = 'none';
+        });
+
+        // Fermer en cliquant à l'extérieur
+        document.getElementById('deviceModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('deviceModal')) {
+                document.getElementById('deviceModal').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
